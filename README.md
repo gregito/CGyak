@@ -1,1 +1,2 @@
 # CGyak
+C ismerkedés nulláról
