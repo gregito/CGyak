@@ -3,12 +3,19 @@ project(HelloWorld)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES Projects/Basics/main.c)
+set(SOURCE_FILES Projects/Basics/HelloWorld.c)
 add_executable(HelloWorld ${SOURCE_FILES})
 
 project(NumericalExercises)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES Projects/Basics/NumericalFormats.c)
-add_executable(NumericalExercises ${SOURCE_FILES} Projects/Basics/NumericalFormats.c)
+set(SOURCE_FILES Projects/Basics/NumericalFormats.c Projects/Basics/Headers/Numerical.h)
+add_executable(NumericalExercises ${SOURCE_FILES} Projects/Basics/NumericalFormats.c Projects/Basics/Headers/Numerical.h)
+
+project(Standard_Input)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(SOURCE_FILES Projects/Basics/Stdin.c)
+add_executable(Standard_Input ${SOURCE_FILES} Projects/Basics/Stdin.c)
