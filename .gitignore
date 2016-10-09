@@ -31,8 +31,4 @@
 # Debug files
 *.dSYM/
 *.su
-.idea/CGyak.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/sonarlint/
-.idea/workspace.xml
+.idea/
